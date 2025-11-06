@@ -14,7 +14,7 @@
     "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
     "prepare": "npm run build",
     "watch": "tsc --watch",
-    "inspector": "kill -9 $(lsof -ti:6277) 2>/dev/null || true && npx @modelcontextprotocol/inspector build/index.js",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js",
     "start": "node build/index.js"
   },
   "keywords": [],
